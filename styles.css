@@ -1,0 +1,213 @@
+* {
+  background-color: #dadada;
+  margin: auto;
+}
+h2{
+font-weight: 900;
+font-family: Arial, Helvetica, sans-serif;
+color: #363636;
+margin-top: 10px;
+text-align: center;
+}
+#header {
+  font-size: 28px;
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  padding: 10px;
+  color: #363636;
+  font-family: 900;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.gitLogo{
+width: 6vh;
+flex-shrink: 0;
+height: 6vh;
+margin-right: 5px;
+padding: 2px;
+
+align-self: flex-end;
+}
+
+.gitLogo:hover{
+transform: scale(1.05);
+transition: transform 0.5s ease-in-out;
+
+}
+
+img{
+border: 5px solid #555;
+border-radius: 50%;
+}
+
+.title {
+flex: 1; 
+}
+
+
+.palette {
+  display: flex;
+  background-color: #363636;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  width: 50vw;
+  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 2.5vh;
+  
+}
+
+#colourPicker {
+  height: 12vh;
+  width: 12vh;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.445);
+  border: none;
+  background: none;
+  -webkit-appearance: none; 
+  appearance: none; 
+}
+
+#colourPicker::-webkit-color-swatch-wrapper {
+  border: none;
+  border-radius: 50%;
+}
+
+#colourPicker::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+}
+
+button{
+  border-radius: 8px;
+  border: none;
+  width: 16vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  padding: 10px;
+  background-color: #363636;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 3vh;
+}
+#slider {
+-webkit-appearance: none; 
+appearance: none;
+width: 200px;
+height: 8px; 
+background: #919191; 
+transition: opacity .2s;
+
+border-radius: 8px;
+}
+
+#slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none;
+width: 25px; 
+height: 25px; 
+background: #363636; 
+cursor: pointer;
+border-radius: 50%; 
+}
+
+
+button:hover,
+input[type='color']:hover {
+  transform: scale(1.05);
+  background-color: #1f1f1f;
+  transition: transform 0.1s ease-in-out;
+  
+}
+
+@media (max-width: 700px) {
+  .header {
+      font-size: 24px; 
+  }
+
+  .palette {
+      width: 90vw; 
+      padding: 10px;
+      flex-direction: column; 
+      gap: 3vh;
+  }
+
+  #colourPicker {
+      height: 10vh; 
+      width: 10vh; 
+      margin-bottom: 2vh;
+  }
+
+  button {
+      width: 80vw; 
+      font-size: 2.5vh; 
+  }
+}
+
+.gridScale{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+@keyframes rainbow {
+  0% {
+    color: #cc2f00;
+  }
+  10% {
+    color: #db6600;
+  }
+  20% {
+    color: #e39e00;
+  }
+  30% {
+    color: #76b80d;
+  }
+  40% {
+    color: #007668;
+  }
+  50% {
+    color: #006486;
+  }
+  60% {
+      color: #007cb5;
+    }
+  70% {
+      color: #465ab2;
+    }
+  80% {
+      color: #6d47b1;
+    }
+  90% {
+      color: #873b9c;
+    }
+  100% {
+      color: #d32676;
+    }
+}
+.rainbow {
+  animation: rainbow 4s infinite;
+  animation-timing-function: linear;
+}
+#container{
+  border: 3px black solid;
+  flex-wrap: wrap;
+  border: 1px solid #000; 
+  background-color: white;
+  width: 560px;
+  height: 560px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.445);
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+#container>div{
+margin: 0;
+width: 350px;
+display: flex;
+height: 350px;
+
+}
+

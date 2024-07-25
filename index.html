@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" /> 
+    <link rel="icon" href="images/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+</head>
+<body>
+    <div id="header">
+        <span class="gitLogo"></span>
+        <h1 class="title"><center>Etch-a-Sketch</center></h1>
+        <a href="https://github.com/MrFarmerBon"> <img class="gitLogo" src="images/github.png"></a>
+    </div>
+    <div class="palette">
+        <input type="color" id="colourPicker"></button>
+        <button name="brushType" type="radio">Pen</button>
+        <button name="brushType" type="radio">Rainbow</button>
+        <button name="brushType" type="radio">Eraser</button>
+        <button id="clear" type="button">Clear</button>
+        
+    </div>
+    <div class="gridScale">
+        <input type="range" min="2" max="64" value="16" id="slider">
+        <h2 id="text">16x16</h2>
+    </div>
+    
+    <div id="container">
+
+    </div>
+    
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
